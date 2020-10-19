@@ -124,8 +124,9 @@ MPI_IRecv(
 ```
 
 ### MPI - dividing 100 tasks into np process
-num : total number of things for example 1 -> 100 numbers then num is 100
-first_num_of_sequence: 1 for above example, or if calculating primes and checking from 3 then 3 would be first_num_of_sequence
+`num` : total number of things for example 1 -> 100 numbers then num is 100
+
+`first_num_of_sequence`: 1 for above example, or if calculating primes and checking from 3 then 3 would be first_num_of_sequence
 1. Simplest option
 ```
 do i = first_num_of_sequnce + rank, num, nproc
