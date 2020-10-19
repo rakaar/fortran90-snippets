@@ -122,3 +122,21 @@ MPI_IRecv(
     ierr
 )
 ```
+
+### MPI - dividing 100 tasks into np process
+1. Simplest option
+```
+do i = first_num_of_sequnce + rank, last_num, nproc
+   ! do something
+enddo
+```
+
+2. Dividing based on strides
+```
+stride = num/nproc
+first = rank*stride + first_num_of_sequence
+last = first + stride - 1
+do i = first, last
+   ! do something
+enddo
+```
