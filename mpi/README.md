@@ -50,7 +50,7 @@ MPI_Send(
 
     rank of destination,
 
-    tag, --- Integer or MPI_Any_Source
+    tag, --- Integer 
 
     MPI_Comm communicator ---Communicator(Mostly MPI_COMM_WORLD),
 
