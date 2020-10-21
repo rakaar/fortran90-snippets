@@ -1,0 +1,15 @@
+The code has been tested with message array of integers of the following sizes
+and the finish times have been noted
+
+size  finish_time_of_rank0 finish_time_of_rank1
+4        1.21139996E-02    1.19689964E-02
+40        1.43340006E-02  1.43780001E-02
+100      1.84300020E-02  1.84419975E-02
+200   2.16549970E-02   2.17889994E-02
+500  3.09110023E-02  3.09270024E-02
+1000 4.51990031E-02  4.52089980E-02
+
+
+it is clear from the above data that the time period increases
+as the message size increases. This is expected because larger data 
+needs to be transmitted from one process to another as size of message increases.

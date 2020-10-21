@@ -1,0 +1,17 @@
+Initially the size of MPI_Comm_World was kept to be same as number of process
+On running the program with 8 process
+The average time was around 8 x 10^(-4)
+(Different processes exit at differnt times, here maximum time is defined as 
+the maxium of all time period of all the processes)
+
+On reducing the size of MPI_Comm_World to its half(size of MPI_Comm_World is nproc/2),
+The maxium time taken by a process was around 4 x 10^(-4)
+
+Hence we observe the average time is expected to reduce with size of MPI_Comm_World
+This is expected because Now the program has to wait for less number of process to sync
+
+Caveat
+However it is difficult to come to a conclusion that is linearly decreasing because
+none of the process were doing anything and hence if u try to furthur reduce the difference in cpu_time
+cannot give a proper idea of relationship 
+
